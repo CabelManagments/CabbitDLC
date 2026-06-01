@@ -11,14 +11,8 @@ base {
 }
 
 repositories {
-    maven {
-        name = "Fabric"
-        url = "https://maven.fabricmc.net/"
-    }
-    maven {
-        name = "TerraformersMC"
-        url = "https://maven.terraformersmc.com/"
-    }
+    maven { url = "https://maven.fabricmc.net/" }
+    maven { url = "https://maven.terraformersmc.com/" }
     mavenCentral()
 }
 
@@ -26,8 +20,7 @@ dependencies {
     minecraft "com.mojang:minecraft:1.21.4"
     mappings "net.fabricmc:yarn:1.21.4+build.1:v2"
     modImplementation "net.fabricmc:fabric-loader:0.16.0"
-    // Поставил версию 0.100.8, она более "железобетонная" для 1.21.4
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.100.8+1.21.4"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.0+1.21.4"
 }
 
 processResources {
